@@ -8,14 +8,14 @@
 
     <body style="background-color: black;">
 
-        <p id="tecla" style="font-size: 200px; text-align:center; color: white;"></p>
+        <p id="tecla" style="font-size: 230px; text-align:center; color: white;"></p>
 
         <script type="text/javascript">;
     
                 document.onkeydown=function(letter){
-                document.getElementById('tecla').innerHTML=letter.key;
+                document.getElementById('tecla').innerHTML = letter.key;
             }
-            
+
             document.onkeyup=function(){
                 document.getElementById('tecla').innerHTML=' ';
             }
