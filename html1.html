@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC>
+<html lang="es">
+    <head>
+        <title>HTML</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Events</h1>
+        <button id = "boto">
+            Fes clic aqui!
+        </button>
+        <script type="text/javascript">;
+
+            var button = document.getElementById('boto');
+
+            button.addEventListener('mousedown', holaMoncl);
+            button.addEventListener('mouseup', holaMonup);
+
+            function holaMoncl () {
+                document.body.style.background = 'red';
+            }
+            function holaMonup () {
+                document.body.style.background = 'blue';
+            }
+        </script>
+    </body>
+</html>
+

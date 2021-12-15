@@ -1,0 +1,28 @@
+<html lang="es">
+    <head>
+        <title>HTML</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Events</h1>
+        
+        <input onkeydown="onKeyDownHandler()"> </input>
+        
+        <input onkeyup="onKeyDownHandler()"> </input>
+
+        <div id = "aaa">
+
+        </div>
+
+        <script type="text/javascript">;
+    
+                function onKeyDownHandler() {
+                console.log("keydown",  String.fromCharCode(event.keyCode));
+
+                document.getElementById("aaa").innerHTML = String.fromCharCode(event.keyCode);
+
+                document.getElementById("aaa").innerHTML;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC>
+<html lang="es">
+    <head>
+        <title>HTML</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Events</h1>
+        <button id = "boto">
+            Fes clic aqui!
+        </button>
+
+        <button id = "botoreiniciar">
+            Reiniciar
+        </button>
+
+        <script type="text/javascript">;
+
+            
+            var button = document.getElementById('boto');
+            var contador = 0;
+
+            button.addEventListener('click', holaMoncl);
+
+            function holaMoncl () {
+                contador++;
+                console.log("Has fet clic " + contador + " vegades");
+            }
+        </script>
+
+        <script type="text/javascript">;
+    
+            var button = document.getElementById('botoreiniciar');
+            var contador = 0;
+
+            button.addEventListener('click', holaMoncl);
+
+            function holaMoncl () {
+                contador = 0;
+                console.log("Has reiniciat el comptador a " + contador);
+            }
+        </script>
+    </body>
+</html>
+
