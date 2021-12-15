@@ -4,41 +4,31 @@
         <title>HTML</title>
         <meta charset="UTF-8">
     </head>
-    <body>
-        <h1>Events</h1>
-        <button id = "boto">
-            Fes clic aqui!
-        </button>
+    <body style="background-color: black; text-align: center;">
+        <h1 style="color: white;">Events</h1>
 
-        <button id = "botoreiniciar">
-            Reiniciar
-        </button>
+        <p style="color: white;">Clica para acumular --></p>
+        <img id = "botonuno" src="ibai.jpg" style="height: 20%; width: 10%;"></img>
+        <p id = "mostrarenpantalla" style="color: white;"></p>
+
+        <p style="color: white;">Clica para reiniciar --></p>
+        <img id = "botondos" src="illojuan.jpg" style="height: 20%; width: 10%;"></img>
+
 
         <script type="text/javascript">;
 
-            
-            var button = document.getElementById('boto');
             var contador = 0;
 
-            button.addEventListener('click', holaMoncl);
-
-            function holaMoncl () {
+            document.getElementById("botonuno").onclick = function () {
                 contador++;
-                console.log("Has fet clic " + contador + " vegades");
+                document.getElementById("mostrarenpantalla").innerHTML = contador
             }
-        </script>
 
-        <script type="text/javascript">;
-    
-            var button = document.getElementById('botoreiniciar');
-            var contador = 0;
-
-            button.addEventListener('click', holaMoncl);
-
-            function holaMoncl () {
+            document.getElementById("botondos").onclick = function () {
                 contador = 0;
-                console.log("Has reiniciat el comptador a " + contador);
+                document.getElementById("mostrarenpantalla").innerHTML = contador
             }
+
         </script>
     </body>
 </html>
